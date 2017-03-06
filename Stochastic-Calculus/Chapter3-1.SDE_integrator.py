@@ -52,7 +52,7 @@ def SDEFunc1_1(y, t, pttl_func, pttl_func_args=(), t_period = t_period0):
     current time
   '''
   if ((t % t_period) < (t_period / 2)):
-    dy = (1E-8) #TODO Õâ¸öº¯Êý»¹Ã»ÏòÁ¿»¯* np.ones(len(y))
+    dy = (1E-8) #TODO è¿™ä¸ªå‡½æ•°è¿˜æ²¡å‘é‡åŒ–* np.ones(len(y))
     force = -(pttl_func(y + dy, *pttl_func_args) - pttl_func(y - dy, *pttl_func_args)) / (2 * dy)
     #print ("x = %.4f, t = %.4f, force = %.3f" % (y, t, force))
   else:
@@ -75,7 +75,7 @@ def SDEFunc1_2(y, t, pttl_func, pttl_func_args=(), t_period = t_period0):
   t:
     current time
   '''
-  dy = (1E-10) #TODO Õâ¸öº¯Êý»¹Ã»ÏòÁ¿»¯* np.ones(len(y))
+  dy = (1E-10) #TODO è¿™ä¸ªå‡½æ•°è¿˜æ²¡å‘é‡åŒ–* np.ones(len(y))
   force = -(pttl_func(y + dy, *pttl_func_args) - pttl_func(y - dy, *pttl_func_args)) / (2 * dy)
   #print ("x = %.4f, t = %.4f, force = %.3f" % (y, t, force))  
   return force
