@@ -1,3 +1,8 @@
+# encoding: utf-8
+"""
+Integral Calculator for Stochastic Differential Equations.
+"""
+
 import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
